@@ -1,0 +1,54 @@
+.PokemonInfoEvolution {
+    position: relative;
+
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    font-size: 2rem;
+
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.PokemonInfoEvolution__description {
+    margin: 0;
+
+    color: #fff;
+}
+
+.PokemonInfoEvolution__img {
+    width: 200px;
+
+    animation: pokeball-spin 2s infinite ease;
+}
+
+@keyframes pokeball-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.PokemonInfoEvolution__img img {
+    max-width: 100%;
+}

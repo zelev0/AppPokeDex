@@ -1,0 +1,38 @@
+.Home_FormName {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.FormName__input {
+    padding: 1rem;
+    margin: 0;
+
+    border-radius: 6%/50%;
+    border: thin solid black;
+    box-shadow: -1px 2px 4px rgb(23, 23, 23);
+}
+
+.FormName__input:focus {
+    border: 2px solid #d90000;
+}
+
+.FormName__input--submit {
+    margin: 1rem 0;
+    background-color: #d90000;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.FormName__Error {
+    margin: 0;
+    margin-top: 0.5rem;
+
+    font-size: 1.2rem;
+
+    color: #f10606;
+}

@@ -1,0 +1,90 @@
+.PokemonInfoInfo__section {
+    position: relative;
+
+    margin: 2rem auto 4rem;
+    padding: 1.5rem 1rem;
+    width: 95%;
+    max-width: 500px;
+
+    text-align: center;
+
+    background-color: rgb(225, 225, 225);
+    border-radius: 10px;
+}
+
+.PokemonInfoInfo__section__title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    margin: 0;
+    padding: 0.5rem 2rem;
+
+    font-size: 2rem;
+    text-shadow: 0 0 3px black;
+    letter-spacing: 0.2rem;
+
+    background-color: rgb(225, 225, 225);
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    transform: translate(-50%, -50%);
+}
+
+.PokemonInfoInfo__section__list {
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    list-style-type: none;
+}
+
+.PokemonInfoInfo__section__item {
+    padding: 1rem 2rem;
+
+    background-color: #fff;
+    border-top: thin solid black;
+    border-left: thin solid black;
+    box-shadow: 3px 3px 4px -2px black;
+}
+
+.PokemonInfoInfo__section--shadow {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 3px 10px -3px black;
+}
+
+.PokemonInfoInfo__section__title--transparent {
+    text-shadow: none;
+    letter-spacing: normal;
+
+    background-color: #fff;
+    color: black;
+}
+
+.PokemonInfoInfo__section__item--color {
+    padding: 1rem 3rem;
+
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+    letter-spacing: 0.2rem;
+
+    background-color: var(--color-background);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.PokemonInfoInfo__section__item__span {
+    font-weight: bolder;
+}

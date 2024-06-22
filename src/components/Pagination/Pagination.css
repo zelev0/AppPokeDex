@@ -1,0 +1,62 @@
+.Pagination__container {
+    margin: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Pagination__Ctrls{
+    padding: 0.5rem 1rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.Pagination__Ctrls--page {
+    background-color: #ff3961;
+    color: #fff;
+}
+
+.Pagination__Ctrls--block {
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.8rem;
+
+    border: 2px solid transparent;
+}
+
+.Pagination__Ctrls--block:hover {
+    border-color: #ff3961;
+}
+
+.Pagination__NumberContainer {
+    display: flex;
+    margin: 0 0.5rem;
+    padding: 0;
+}
+
+.Page__number {
+    padding: 0.5rem;
+
+    list-style-type: none;
+    font-size: 1.5rem;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.Page__number:hover {
+    background-color: #ff3961;
+    color: #fff;
+}
+
+.Page__active {
+    background-color: #ff3961;
+    color: #fff;
+}

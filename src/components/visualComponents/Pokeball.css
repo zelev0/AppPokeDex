@@ -1,0 +1,26 @@
+.Pokeball {
+    position: absolute;
+    right: 0;
+    top: calc(0.3 * var(--legth) + 10px);
+    z-index: -1;
+
+    width: var(--legth);
+    height: var(--legth);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(176 175 175 / 0.25);
+    border-radius: 50%;
+    box-shadow: 0 0 0 calc(0.3 * var(--legth)) var(--color-background),
+                0 0 0 calc(0.9 * var(--legth)) rgb(176 175 175 / 0.25);
+}
+
+.Pokeball__rectangle {
+    width: calc(0.9 * var(--legth));
+    height: calc(0.3 * var(--legth));
+    background-color: var(--color-background);
+    box-shadow: calc(1.9 * var(--legth)) 0 0 var(--color-background);
+
+    transform: translateX(-100%);
+}

@@ -1,0 +1,75 @@
+.PokemonInfoStats__section {
+    height: 100%;
+}
+
+.PokemonInfoStats__List {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-size: 1.4rem;
+
+    list-style-type: none;
+}
+
+.PokemonInfoStats__Item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.PokemonInfoStats__Item:nth-child(2n+1) {
+    --color-bar: rgb(7, 210, 7);
+}
+
+.PokemonInfoStats__Item:nth-child(2n) {
+    --color-bar: rgb(244, 82, 54);
+}
+
+.PokemonInfoStats__StatName {
+    flex-basis: 105px;
+    flex-shrink: 0;
+
+    color: rgb(133, 131, 131);
+}
+
+.PokemonInfoStats__StatValue {
+    flex-basis: 55px;
+    flex-shrink: 0;
+}
+
+.PokemonInfoStats__StatBar {
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: 5px;
+
+    background-color: rgb(194, 192, 192);
+    border-radius: 2.5px;
+
+    overflow: hidden;
+}
+
+.PokemonInfoStats__StatBar__Loader {
+    width: 100%;
+    height: 5px;
+
+    background-color: var(--color-bar);
+    border-radius: 2.5px;
+    transform: translateX(-100%);
+
+    animation: loadStatBar 0.5s 1 forwards ease-in;
+}
+
+@keyframes loadStatBar {
+    100% {
+        transform: translateX(calc(-100% + var(--stat-percentage)));
+    }
+}

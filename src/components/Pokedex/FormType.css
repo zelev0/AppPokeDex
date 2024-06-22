@@ -1,0 +1,78 @@
+.FormType {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 100%;
+    min-width: 320px;
+    max-width: 440px;
+    height: 70%;
+    min-height: 515px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(220, 215, 215);
+    border-top-left-radius: 50px 50px;
+    border-top-right-radius: 50px 50px;
+
+    transform: translate(-50%,100%);
+    transition: transform 0.3s ease-in;
+}
+
+@keyframes getInType {
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.getInType {
+    transform: translate(-50%, 0);
+}
+
+.FormType__title {
+    margin: 4rem 0 0;
+
+    font-size: 3rem;
+}
+
+.FormType__btnClose {
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 2rem;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.FormType__select {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+    
+    font-size: 2rem;
+
+    border-radius: 10px;
+}
+
+.FormType__select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgb(255 57 97 / 0.7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+    outline: none;
+}
+
+.FormType__select option {
+    color: #8e8e8e
+}

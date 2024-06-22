@@ -1,0 +1,72 @@
+.Pokedex__forms {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: #222222b3;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.Pokedex__forms--active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Pokedex__forms__btn {
+    --legth: 0.5em;
+    --color-background: #fff;
+
+    position: absolute;
+    right: 2rem;
+    bottom: 8rem;
+
+    min-width: 100px;
+    height: 3.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--color-background);
+    border: none;
+    border-radius: 15%/50%;
+    
+    cursor: pointer;
+}
+
+.Pokedex_forms_pokeball {
+        width: var(--legth);
+        height: var(--legth);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        background-color: #ff3962;
+        border-radius: 50%;
+        box-shadow: 0 0 0 calc(0.3 * var(--legth)) var(--color-background),
+                    0 0 0 calc(0.9 * var(--legth)) #ff3962;
+}
+
+.Pokedex_forms_pokeball_rectangle {
+    width: calc(0.9 * var(--legth));
+    height: calc(0.3 * var(--legth));
+    background-color: var(--color-background);
+    box-shadow: calc(1.9 * var(--legth)) 0 0 var(--color-background);
+
+    transform: translateX(-100%);
+}
+
+.Pokedex__forms__btn--search {
+    transform: translateY(-1rem);
+}
+
+.Pokedex__forms__btn--types {
+    transform: translateY(calc(-1 * (100% + 2rem)));
+}
